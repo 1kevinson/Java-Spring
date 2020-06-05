@@ -4,13 +4,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+import com.in28minutes.spring.basics.springin10steps.basic.BinarySearchImpl;
+
 @SpringBootApplication
-public class SpringIn10StepsApplication {
+public class SpringIn10StepsBasicApplication {
 
 	public static void main(String[] args) {
 
 		// APPLICATION CONTEXT --> Manager of BEANS
-		ApplicationContext applicationContext = SpringApplication.run(SpringIn10StepsApplication.class, args);
+		ApplicationContext applicationContext = SpringApplication.run(SpringIn10StepsBasicApplication.class, args);
 
 		BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
 		BinarySearchImpl binarySearch1 = applicationContext.getBean(BinarySearchImpl.class);
