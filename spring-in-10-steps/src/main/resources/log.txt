@@ -3366,3 +3366,16 @@ Unconditional classes:
 2020-06-05 14:48:33.579  INFO 12452 --- [main] .SpringIn10StepsComponentScanApplication : No active profile set, falling back to default profiles: default
 2020-06-05 14:48:34.036  INFO 12452 --- [main] .SpringIn10StepsComponentScanApplication : Started SpringIn10StepsComponentScanApplication in 0.997 seconds (JVM running for 1.365)
 2020-06-05 14:48:34.044  INFO 12452 --- [main] .SpringIn10StepsComponentScanApplication : com.in28minutes.spring.basics.componentscan.ComponentDAO@7b205dbd
+2020-06-05 16:14:53.375  INFO 13170 --- [main] .i.s.b.s.SpringIn10StepsBasicApplication : Starting SpringIn10StepsBasicApplication on MacBook-Pro13-de-Arsene.local with PID 13170 (/Users/arsenekevin/Documents/Arsene/Developer/Ultimate/BackEnd/Java/spring-course/Java-Spring/spring-in-10-steps/target/classes started by arsenekevin in /Users/arsenekevin/Documents/Arsene/Developer/Ultimate/BackEnd/Java/spring-course/Java-Spring/spring-in-10-steps)
+2020-06-05 16:14:53.378  INFO 13170 --- [main] .i.s.b.s.SpringIn10StepsBasicApplication : No active profile set, falling back to default profiles: default
+2020-06-05 16:14:53.930  INFO 13170 --- [main] .i.s.b.s.SpringIn10StepsBasicApplication : Started SpringIn10StepsBasicApplication in 1.102 seconds (JVM running for 1.467)
+2020-06-05 16:17:16.735  INFO 13188 --- [main] .i.s.b.s.SpringIn10StepsBasicApplication : Starting SpringIn10StepsBasicApplication on MacBook-Pro13-de-Arsene.local with PID 13188 (/Users/arsenekevin/Documents/Arsene/Developer/Ultimate/BackEnd/Java/spring-course/Java-Spring/spring-in-10-steps/target/classes started by arsenekevin in /Users/arsenekevin/Documents/Arsene/Developer/Ultimate/BackEnd/Java/spring-course/Java-Spring/spring-in-10-steps)
+2020-06-05 16:17:16.738  INFO 13188 --- [main] .i.s.b.s.SpringIn10StepsBasicApplication : No active profile set, falling back to default profiles: default
+2020-06-05 16:17:17.258  INFO 13188 --- [main] .i.s.b.s.SpringIn10StepsBasicApplication : Started SpringIn10StepsBasicApplication in 1.035 seconds (JVM running for 1.436)
+2020-06-05 16:17:17.265  INFO 13188 --- [main] c.i.s.b.s.basic.BinarySearchImpl         : postConstruct
+2020-06-05 16:17:17.266  INFO 13188 --- [main] c.i.s.b.s.basic.BinarySearchImpl         : postConstruct
+2020-06-05 16:18:49.587  INFO 13219 --- [main] .i.s.b.s.SpringIn10StepsBasicApplication : Starting SpringIn10StepsBasicApplication on MacBook-Pro13-de-Arsene.local with PID 13219 (/Users/arsenekevin/Documents/Arsene/Developer/Ultimate/BackEnd/Java/spring-course/Java-Spring/spring-in-10-steps/target/classes started by arsenekevin in /Users/arsenekevin/Documents/Arsene/Developer/Ultimate/BackEnd/Java/spring-course/Java-Spring/spring-in-10-steps)
+2020-06-05 16:18:49.589  INFO 13219 --- [main] .i.s.b.s.SpringIn10StepsBasicApplication : No active profile set, falling back to default profiles: default
+2020-06-05 16:18:50.085  INFO 13219 --- [main] .i.s.b.s.SpringIn10StepsBasicApplication : Started SpringIn10StepsBasicApplication in 0.805 seconds (JVM running for 1.135)
+2020-06-05 16:18:50.093  INFO 13219 --- [main] c.i.s.b.s.basic.BinarySearchImpl         : postConstruct
+2020-06-05 16:18:50.093  INFO 13219 --- [main] c.i.s.b.s.basic.BinarySearchImpl         : postConstruct
