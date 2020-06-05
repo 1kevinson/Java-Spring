@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 import com.in28minutes.spring.basics.componentscan.ComponentDAO;
 
 /**
- * ComponentScan is useful to scan for a beans outside the package of
+ * ComponentScan is useful to scan for a beans outside the package of the
  * SpringBootApplication
  */
 
