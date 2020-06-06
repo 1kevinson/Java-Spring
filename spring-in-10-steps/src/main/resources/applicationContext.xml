@@ -4,16 +4,22 @@
 
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd
+           ">
+           
+  <context:component-scan base-package="com.in28minutes.spring.basics.springin10steps"/>
 
-  <bean id="xmlJdbcConnection" class="com.in28minutes.spring.basics.springin10steps.xml.XmlJdbcConnection">
+  <!-- <bean id="xmlJdbcConnection" class="com.in28minutes.spring.basics.springin10steps.xml.XmlJdbcConnection">
 
   </bean>
 
   <bean id="xmlPersonDAO" class="com.in28minutes.spring.basics.springin10steps.xml.XmlPersonDAO">
    	<property name="xmlJdbcConnection" ref="xmlJdbcConnection"></property>
-  </bean>
+  </bean> -->
 
   <!-- more bean definitions go here -->
 
