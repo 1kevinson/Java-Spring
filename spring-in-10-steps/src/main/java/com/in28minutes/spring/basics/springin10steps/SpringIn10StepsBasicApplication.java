@@ -4,6 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.AbstractApplicationContext;
 
 import com.in28minutes.spring.basics.springin10steps.basic.BinarySearchImpl;
 
@@ -26,8 +27,10 @@ public class SpringIn10StepsBasicApplication {
 		int result = binarySearch.binarySearch(new int[] { 12, 4, 6 }, 3);
 
 		System.out.println(result);
+		((AbstractApplicationContext) applicationContext).close();
+
+		// Get java version
+		System.out.println(System.getProperty("java.runtime.version"));
 	}
 
 }
-
-// FINISHING SECTION 4
