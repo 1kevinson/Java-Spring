@@ -11,16 +11,6 @@
            http://www.springframework.org/schema/context/spring-context.xsd
            ">
            
-  <context:component-scan base-package="com.in28minutes.spring.basics"/>
-
-  <!-- <bean id="xmlJdbcConnection" class="com.in28minutes.spring.basics.springin10steps.xml.XmlJdbcConnection">
-
-  </bean>
-
-  <bean id="xmlPersonDAO" class="com.in28minutes.spring.basics.springin10steps.xml.XmlPersonDAO">
-   	<property name="xmlJdbcConnection" ref="xmlJdbcConnection"></property>
-  </bean> -->
-
-  <!-- more bean definitions go here -->
+ 	<import resource="classpath:applicationContext.xml"></import>
 
 </beans>
