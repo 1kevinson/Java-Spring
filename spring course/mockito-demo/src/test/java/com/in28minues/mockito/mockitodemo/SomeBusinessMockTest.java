@@ -1,38 +1,49 @@
 package com.in28minues.mockito.mockitodemo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
 
+@RunWith(MockitoJUnitRunner.class)
 public class SomeBusinessMockTest {
+
+	@Mock
+	DataService dataServiceMock;
+
+	@InjectMocks
+	SomeBusinessImpl someBusinessImpl;
 
 	// Using Mock is better than using stubs
 	@Test
 	public void findTheGreatestFromAllData() {
 
-		DataService dataServiceMock = mock(DataService.class);
 		when(dataServiceMock.retrieveAllData()).thenReturn(new int[] { 36, 21, 3, 61, 45 });
 
-		SomeBusinessImpl someBusinessImpl = new SomeBusinessImpl(dataServiceMock);
-		int res = someBusinessImpl.findTheGreatestFromAllData();
-
 		// should be 61
-		assertEquals(61, res);
+		assertEquals(61, someBusinessImpl.findTheGreatestFromAllData());
 	}
 
 	@Test
 	public void findTheGreatestFromAllData_For1value() {
 
-		DataService dataServiceMock = mock(DataService.class);
 		when(dataServiceMock.retrieveAllData()).thenReturn(new int[] { 15 });
 
-		SomeBusinessImpl someBusinessImpl = new SomeBusinessImpl(dataServiceMock);
-		int res = someBusinessImpl.findTheGreatestFromAllData();
-
 		// should be 15
-		assertEquals(15, res);
+		assertEquals(15, someBusinessImpl.findTheGreatestFromAllData());
+	}
+
+	@Test
+	public void findTheGreatestFromAllData_NoValue() {
+
+		when(dataServiceMock.retrieveAllData()).thenReturn(new int[] {});
+
+		// should be 61
+		assertEquals(Integer.MIN_VALUE, someBusinessImpl.findTheGreatestFromAllData());
 	}
 
 }
