@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
 
-public class SomeBusinessTest {
+public class SomeBusinessStubTest {
 
 	@Test
 	public void findTheGreatestFromAllData() {
