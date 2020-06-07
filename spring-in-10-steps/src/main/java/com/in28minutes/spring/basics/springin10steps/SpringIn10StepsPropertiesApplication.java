@@ -6,15 +6,12 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.AbstractApplicationContext;
 
 import com.in28minutes.spring.basics.springin10steps.properties.SomeExternalService;
 
 @Configuration
 @ComponentScan
-//app.properties
-@PropertySource("classpath:app.properties")
 public class SpringIn10StepsPropertiesApplication {
 
 	private static Logger logger = LoggerFactory.getLogger(SpringIn10StepsPropertiesApplication.class);
