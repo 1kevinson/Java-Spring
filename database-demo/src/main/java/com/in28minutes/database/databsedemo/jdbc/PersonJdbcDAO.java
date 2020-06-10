@@ -16,6 +16,7 @@ public class PersonJdbcDAO {
 	JdbcTemplate jdbcTemplate;
 
 	// SELECT * FROM PERSON
+	@SuppressWarnings("unchecked")
 	public List<Person> findAll() {
 		return jdbcTemplate.query("SELECT * FROM PERSON", new BeanPropertyRowMapper(Person.class));
 	}
