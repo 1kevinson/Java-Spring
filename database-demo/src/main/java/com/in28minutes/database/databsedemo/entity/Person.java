@@ -2,9 +2,17 @@ package com.in28minutes.database.databsedemo.entity;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Person {
 
+	@Id // Indicate it's primary key
+	@GeneratedValue
 	private int id;
+
 	private String name;
 	private String location;
 	private Date birthdate;

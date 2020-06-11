@@ -16,7 +16,8 @@ public class PersonJdbcDAO {
 	@Autowired
 	JdbcTemplate jdbcTemplate;
 
-	// SELECT * FROM PERSON
+	// In Spring JDBC with write the query first then we map the values...
+
 	public List<Person> findAll() {
 		return jdbcTemplate.query("SELECT * FROM PERSON", new BeanPropertyRowMapper<Person>(Person.class));
 	}
@@ -36,6 +37,7 @@ public class PersonJdbcDAO {
 						new Timestamp(person.getBirthdate().getTime()) });
 	}
 
+	// Order is important to match query parameter with object parameter
 	public int update(Person person) {
 		return jdbcTemplate.update("UPDATE PERSON SET NAME = ?, LOCATION = ?, BIRTH_DATE = ? " + "WHERE ID = ?",
 				new Object[] { person.getName(), person.getLocation(), new Timestamp(person.getBirthdate().getTime()),
