@@ -34,6 +34,7 @@ public class JpaDemoApplication2 implements CommandLineRunner {
 		logger.info("Update on user -> {}",
 				repository.update(new Person(10002, "James", "Paris Sud Telecom", new Date())));
 
+		repository.delete(10001);
 	}
 
 }
