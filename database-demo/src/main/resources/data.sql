@@ -1,3 +1,5 @@
+/* JPA AUTO CREATE THE TABLE */
+
 /* create table person
 (
    id integer not null,

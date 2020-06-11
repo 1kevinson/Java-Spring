@@ -71,7 +71,7 @@ public class Person {
 		this.birthDate = birthdate;
 	}
 
-	// Override this method to customize the sysout input
+	// Override this method to customize the sysout of an object
 	@Override
 	public String toString() {
 		return "\n Person [id=" + id + ", name=" + name + ", location=" + location + ", birthdate=" + birthDate + "]";
