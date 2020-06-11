@@ -9,7 +9,7 @@ public class Person {
 	private String location;
 	private Date birthdate;
 
-	// Define the no argument construcstor because we use "BeanPropertyRowMapper"
+	// Define the no argument constructor because we use "BeanPropertyRowMapper"
 	public Person() {
 
 	}

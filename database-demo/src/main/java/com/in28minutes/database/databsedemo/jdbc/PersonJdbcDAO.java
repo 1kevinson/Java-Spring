@@ -16,9 +16,13 @@ public class PersonJdbcDAO {
 	JdbcTemplate jdbcTemplate;
 
 	// SELECT * FROM PERSON
-	@SuppressWarnings("unchecked")
 	public List<Person> findAll() {
-		return jdbcTemplate.query("SELECT * FROM PERSON", new BeanPropertyRowMapper(Person.class));
+		return jdbcTemplate.query("SELECT * FROM PERSON", new BeanPropertyRowMapper<Person>(Person.class));
+	}
+
+	public Person findById(int id) {
+		return jdbcTemplate.queryForObject("SELECT * FROM person WHERE id=?", new Object[] { id },
+				new BeanPropertyRowMapper<Person>(Person.class));
 	}
 
 }
