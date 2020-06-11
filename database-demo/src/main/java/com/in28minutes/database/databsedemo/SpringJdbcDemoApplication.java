@@ -15,7 +15,7 @@ import com.in28minutes.database.databsedemo.jdbc.PersonJdbcDAO;
 import net.bytebuddy.asm.Advice.This;
 
 @SpringBootApplication
-public class DatabaseDemoApplication implements CommandLineRunner {
+public class SpringJdbcDemoApplication implements CommandLineRunner {
 
 	private Logger logger = LoggerFactory.getLogger(This.class);
 
@@ -23,7 +23,7 @@ public class DatabaseDemoApplication implements CommandLineRunner {
 	PersonJdbcDAO dao;
 
 	public static void main(String[] args) {
-		SpringApplication.run(DatabaseDemoApplication.class, args);
+		SpringApplication.run(SpringJdbcDemoApplication.class, args);
 	}
 
 	@Override

@@ -15,19 +15,28 @@ public class Person {
 
 	private String name;
 	private String location;
-	private Date birthdate;
+	private Date birthDate;
 
 	// Define the no argument constructor because we use "BeanPropertyRowMapper"
 	public Person() {
 
 	}
 
+	// Define a constructor with no Id for Hibernate
+	public Person(String name, String location, Date birthdate) {
+		super();
+		this.name = name;
+		this.location = location;
+		this.birthDate = birthdate;
+	}
+
+	// In java we can define multiple constructor
 	public Person(int id, String name, String location, Date birthdate) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.location = location;
-		this.birthdate = birthdate;
+		this.birthDate = birthdate;
 	}
 
 	public int getId() {
@@ -55,17 +64,17 @@ public class Person {
 	}
 
 	public Date getBirthdate() {
-		return birthdate;
+		return birthDate;
 	}
 
 	public void setBirthdate(Date birthdate) {
-		this.birthdate = birthdate;
+		this.birthDate = birthdate;
 	}
 
 	// Override this method to customize the sysout input
 	@Override
 	public String toString() {
-		return "\n Person [id=" + id + ", name=" + name + ", location=" + location + ", birthdate=" + birthdate + "]";
+		return "\n Person [id=" + id + ", name=" + name + ", location=" + location + ", birthdate=" + birthDate + "]";
 	}
 
 }
