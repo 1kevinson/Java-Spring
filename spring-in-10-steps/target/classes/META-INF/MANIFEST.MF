@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Build-Jdk-Spec: 9
-Implementation-Title: spring-in-10-steps
-Implementation-Version: 0.0.1-SNAPSHOT
-Implementation-Vendor: Pivotal Software, Inc.
-Created-By: Maven Integration for Eclipse
-
